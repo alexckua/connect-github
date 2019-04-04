@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: connect-github_development
+
+test:
+  <<: *default
+  database: connect-github_test
+
+production:
+  <<: *default
+  database: connect-github_production
+  username: connect-github
+  password: <%= ENV['CONNECT-GITHUB_DATABASE_PASSWORD'] %>

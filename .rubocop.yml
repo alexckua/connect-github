@@ -1,0 +1,22 @@
+require: rubocop-performance
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+
+Metrics/LineLength:
+  Max: 160
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/MixinUsage:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 15
