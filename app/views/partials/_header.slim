@@ -1,0 +1,8 @@
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+  .container
+    a.navbar-brand Github Connect
+    button.navbar-toggler aria-controls="navbarResponsive" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarResponsive" data-toggle="collapse" type="button"
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto.nav-links
+        = render 'partials/navbar' if current_user
