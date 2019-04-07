@@ -1,1 +1,16 @@
 @import "bootstrap";
+
+html, body {
+  height: 100%;
+  background-color: #fbf0e6;
+}
+
+body {
+  padding-top: 54px;
+}
+
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

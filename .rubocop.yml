@@ -1,5 +1,4 @@
 require: rubocop-performance
-
 inherit_mode:
   merge:
     - Exclude
@@ -7,6 +6,7 @@ inherit_mode:
 AllCops:
   Exclude:
     - 'db/**/*'
+    - 'config/initializers/simple_form_bootstrap.rb'
 
 Metrics/LineLength:
   Max: 160

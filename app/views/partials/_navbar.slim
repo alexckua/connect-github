@@ -1,0 +1,4 @@
+li.nav-item.user-info
+  .nav-link= current_user.nickname
+li.nav-item.active
+  = link_to('Logout', '/logout', method: :delete, remote: true, class: 'nav-link', data: { confirm: 'Are you sure?' })
