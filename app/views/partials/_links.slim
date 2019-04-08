@@ -1,6 +1,6 @@
 .content
   dl.dl-horizontal
-    - @git_user.rels.to_h.map do |key, value|
+    - git_user.rels.to_h.map do |key, value|
       dt=key
       dd
-        =link_to value, value, target: '_blank'
+        =link_to value, value, remote: true
