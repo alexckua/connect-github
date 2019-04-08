@@ -1,0 +1,6 @@
+#flash-messages
+  - flash.each do |message_type, message|
+    div class=("alert text-center alert-#{flash_class(message_type)} alert-dismissable mb-0")
+      span= message&.join("<br>").html_safe
+      button.close aria-label="Close" data-dismiss="alert" type="button"
+        span aria-hidden="true"  &times;

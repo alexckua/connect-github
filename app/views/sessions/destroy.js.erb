@@ -1,3 +1,4 @@
 $('.content').remove();
 $('.nav-links li').remove();
 $('.main-content').append("<%= j render 'partials/user_form' %>");
+$('#flash-messages').html("<%= j render 'partials/flash' %>");

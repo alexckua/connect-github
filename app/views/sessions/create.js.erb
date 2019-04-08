@@ -1,3 +1,6 @@
-$('.session-container').remove();
-$('.main-content').append("<%= j render 'partials/links' %>");
-$('.nav-links').append("<%= j render 'partials/navbar' %>");
+<% if current_user.present? %>
+  $('.session-container').remove();
+  $('.main-content').append("<%= j render 'partials/links' %>");
+  $('.nav-links').append("<%= j render 'partials/navbar' %>");
+<% end %>
+$('#flash-messages').html("<%= j render 'partials/flash' %>");
