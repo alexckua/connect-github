@@ -4,9 +4,8 @@ class SessionsController < ApplicationController
   layout false
 
   def create
-    @user = User.find_by(nickname: user_params[:nickname], git_token: user_params[:git_token])
-    @user ||= User.new(user_params)
-    @git_user ||= GithubService.new(user_params[:git_token]).user
+    @user = User.find_by(user_params) || User.new(user_params)
+    @git_user = GithubService.new(user_params[:git_token]).user
 
     if @user.valid? && git_credentials_valid?
       @user.save

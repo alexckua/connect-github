@@ -1,4 +1,4 @@
 li.nav-item.user-info
-  .nav-link= @git_user.name
+  .nav-link= git_user.name
 li.nav-item.active
   = link_to('Logout', '/logout', method: :delete, remote: true, class: 'nav-link', data: { confirm: 'Are you sure?' })

@@ -8,7 +8,7 @@ class GithubService
   end
 
   def user
-    @user ||= client.user
+    @user = client.user
   rescue Octokit::Unauthorized => e
     e.message
   end
