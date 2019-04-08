@@ -1,4 +1,5 @@
 .row.session-container.mt-4
+  = render 'partials/info'
   = simple_form_for :user, url: sessions_path, html: { class: 'form-inline' }, method: :post, remote: true do |f|
     .col-lg-5.col-md-5.col-sm-12
       = f.input :nickname, label: false, placeholder: 'Nickname', required: true
