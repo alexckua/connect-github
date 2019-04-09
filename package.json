@@ -1,5 +1,7 @@
 {
   "name": "connect-github",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery.json-viewer": "^1.2.0"
+  }
 }
