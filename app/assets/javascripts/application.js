@@ -16,4 +16,5 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require jquery.json-viewer/json-viewer/jquery.json-viewer
 //= require_tree .

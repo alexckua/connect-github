@@ -1,6 +1,8 @@
 .content
   dl.dl-horizontal
     - git_user.rels.to_h.map do |key, value|
-      dt=key
-      dd
-        =link_to value, value, remote: true
+      dt= key
+      dd.btn-link data-content="#{value}"
+        = value
+
+  #response-content
